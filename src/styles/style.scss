@@ -13,18 +13,50 @@ body {
     display: flex;
     background-color: #1B1A17;
     flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
     .task-form {
         display: flex;   
         justify-content: center; 
         gap: 8px;
         margin-bottom: 10%;
         .input-fields {
-            width: 60%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             gap: 6px;
         }
-    }                                 
+    }  
+    .task-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1F1E1B;
+        border-radius: 8px;
+        outline-color: #FF8303;
+        outline-style: outset;
+        outline-width: 2px;
+        margin-bottom: 20px;
+        .task-block-text {
+            margin-left: 20px;
+            .task-block-title {
+                font-size: 22px;
+                font-weight: 500;
+                margin-bottom: -5px;
+                margin-top: 15px;
+            }
+            .task-block-about {
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+        }
+        .task-block-button {
+            margin-right: 20px;
+            height: 30px;
+            width: 30px;
+            font-size: 20px;
+        }
+    }                               
 }
 
 .no-tasks {
@@ -63,4 +95,7 @@ button {
     font-size: 40px;
 }
 
-//тут должны быть импорты остальных scss
+p {
+    color: #F0E3CA;
+    font-family: Roboto;
+}
