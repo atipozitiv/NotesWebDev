@@ -24,6 +24,7 @@ function onOpen() {
 }
 
 let deleteButtons;
+let tastBlocks;
 onOpen();
 NoTasks();
 
@@ -69,6 +70,7 @@ function drawTask(title, about) {
 
     document.body.appendChild(taskCardMainDiv);
     GetDeleteButtons();
+    GetTaskBlocks();
 }
 
 GetDeleteButtons();
@@ -80,6 +82,27 @@ function GetDeleteButtons() {
             localStorage.removeItem(storageKey);
             NoTasks();
             this.parentNode.parentNode.removeChild(this.parentNode);
+        })
+    }
+}
+
+GetTaskBlocks();
+function GetTaskBlocks() {
+    tastBlocks = document.getElementsByClassName("task-block-text");
+    for (let turn = 0; turn < tastBlocks.length; ++tastBlocks) {
+        tastBlocks[turn].addEventListener('click', function() {
+            let specButtons = document.createElement('div');
+            specButtons.classList.add('spec-buttons');
+            let shareButton = document.createElement('button');
+            shareButton.classList.add('share-button');
+            let infoButton = document.createElement('button');
+            infoButton.classList.add('info-button');
+            let editButton = document.createElement('button');
+            editButton.classList.add('edit-button');
+            specButtons.appendChild(shareButton);
+            specButtons.appendChild(infoButton);
+            specButtons.appendChild(editButton);
+            this.parentNode.parentNode.appendChild(specButtons);
         })
     }
 }

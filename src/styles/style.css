@@ -38,6 +38,7 @@ body .task-block {
   margin-bottom: 20px;
 }
 body .task-block .task-block-text {
+  cursor: pointer;
   margin-left: 20px;
 }
 body .task-block .task-block-text .task-block-title {
@@ -55,6 +56,28 @@ body .task-block .task-block-button {
   height: 30px;
   width: 30px;
   font-size: 20px;
+}
+body .spec-buttons {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+body .spec-buttons .share-button {
+  background-image: url("../assets/Share.png");
+  height: 30px;
+  width: 30px;
+}
+body .spec-buttons .info-button {
+  background-image: url("../assets/wordi.png");
+  height: 30px;
+  width: 30px;
+}
+body .spec-buttons .edit-button {
+  background-image: url("../assets/Edit.png");
+  height: 30px;
+  width: 30px;
 }
 
 .no-tasks {
@@ -92,6 +115,8 @@ button {
   width: 70px;
   font-size: 40px;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 p {
