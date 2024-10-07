@@ -36,9 +36,9 @@ body .task-block {
   outline-style: outset;
   outline-width: 2px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 body .task-block .task-block-text {
-  cursor: pointer;
   margin-left: 20px;
 }
 body .task-block .task-block-text .task-block-title {
@@ -60,8 +60,8 @@ body .task-block .task-block-button {
 body .spec-buttons {
   display: flex;
   justify-content: end;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: -5px;
   gap: 10px;
 }
 body .spec-buttons .share-button {
@@ -70,7 +70,7 @@ body .spec-buttons .share-button {
   width: 30px;
 }
 body .spec-buttons .info-button {
-  background-image: url("../assets/wordi.png");
+  background-image: url("../assets/letteri.png");
   height: 30px;
   width: 30px;
 }

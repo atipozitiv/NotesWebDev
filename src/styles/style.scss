@@ -38,8 +38,8 @@ body {
         outline-style: outset;
         outline-width: 2px;
         margin-bottom: 20px;
+        cursor: pointer;
         .task-block-text {
-            cursor: pointer;
             margin-left: 20px;
             .task-block-title {
                 font-size: 22px;
@@ -63,7 +63,8 @@ body {
     .spec-buttons {
         display: flex;
         justify-content: end;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        margin-top: -5px;
         gap: 10px;
         .share-button {
             background-image: url("../assets/Share.png");
@@ -71,7 +72,7 @@ body {
             width: 30px;
         }         
         .info-button {
-            background-image: url("../assets/wordi.png");
+            background-image: url("../assets/letteri.png");
             height: 30px;
             width: 30px;
         }   

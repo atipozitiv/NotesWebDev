@@ -69,10 +69,9 @@ function drawTask(title, about) {
     document.body.appendChild(taskCardMainDiv);
 }
 
-
-
 document.body.addEventListener('click', function(event) {
     if (event.target.classList == "task-block") {
+        DeleteSpecButtons();
         let specButtons = document.createElement('div');
         specButtons.classList.add('spec-buttons');
 
@@ -95,6 +94,27 @@ document.body.addEventListener('click', function(event) {
         let storageKey = event.target.parentNode.getElementsByClassName("task-block-title")[0].innerHTML;
         localStorage.removeItem(storageKey);
         NoTasks();
+        DeleteSpecButtons();
         event.target.parentNode.parentNode.removeChild(event.target.parentNode);
     }
+
+    if (event.target.classList == "share-button") {
+        alert("dfg");
+        console.log("share");
+    }
+
+    if (event.target.classList == "info-button") {
+        console.log("info");
+    }
+
+    if (event.target.classList == "edit-button") {
+        console.log("edit");
+    }
 })
+
+function DeleteSpecButtons() {
+    const elements = document.getElementsByClassName("spec-buttons");
+        while(elements.length > 0){
+            elements[0].parentNode.removeChild(elements[0]);
+        }   
+}
