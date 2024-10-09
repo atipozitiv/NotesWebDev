@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Roboto";
-    src: url(../assets/Roboto.ttf);
+    src: url(../assets/fonts/Roboto.ttf);
 }
 
 @font-face {
     font-family: "Inter";
-    src: url(../assets/Inter.ttf);
+    src: url(../assets/fonts/Inter.ttf);
 }
 
 body {
@@ -68,17 +68,17 @@ body {
         margin-top: -5px;
         gap: 10px;
         .share-button {
-            background-image: url("../assets/Share.png");
+            background-image: url("../assets/images/Share.png");
             height: 30px;
             width: 30px;
         }         
         .info-button {
-            background-image: url("../assets/letteri.png");
+            background-image: url("../assets/images/letteri.png");
             height: 30px;
             width: 30px;
         }   
         .edit-button {
-            background-image: url("../assets/Edit.png");
+            background-image: url("../assets/images/Edit.png");
             height: 30px;
             width: 30px;
         }   
@@ -140,19 +140,19 @@ body {
                 border-radius: 50%;
             }
             .to-copy-button {
-                background-image: url("../assets/toCopy.png");
+                background-image: url("../assets/images/toCopy.png");
             }
             .vk-button {
-                background-image: url("../assets/vk.png");
+                background-image: url("../assets/images/vk.png");
             }
             .telegram-button {
-                background-image: url("../assets/telegram.png");
+                background-image: url("../assets/images/telegram.png");
             }
             .watsapp-button {
-                background-image: url("../assets/whatsapp.png");
+                background-image: url("../assets/images/whatsapp.png");
             }
             .facebook-button {
-                background-image: url("../assets/facebook.png");
+                background-image: url("../assets/images/facebook.png");
             }
         }
 
@@ -252,4 +252,3 @@ p {
     color: #F0E3CA;
     font-family: Roboto;
 }
-
