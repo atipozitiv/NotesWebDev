@@ -1,0 +1,43 @@
+.no-tasks {
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 24px;
+    color: #FFFFFF;
+}    
+
+hr {
+    width: 50px;
+    height: 3px;
+    background-color: #FF8303;
+    border-color: #FF8303;
+    border-radius: 4px;
+}
+
+input {
+    border-color: #FF8303;
+    background-color: #1F1E1B;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 30px;
+    font-family: Roboto;
+    padding-left: 10px;
+    color: rgb(192, 192, 192);
+}     
+
+button {
+    border-color: #FF8303;
+    border-radius: 4px;
+    background-color: #1B1A17;
+    color: #FF8303;
+    width: 70px;
+    font-size: 40px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+p {
+    color: #F0E3CA;
+    font-family: Roboto;
+}

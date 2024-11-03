@@ -1,0 +1,125 @@
+body {
+    .popup-background {
+        background: rgb(0, 0, 0, 0.7);;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        .delete-popup {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1B1A17;
+            height: 140px;
+            margin-top: 20%;
+            margin-left: 25%;
+            width: 50%;
+            border-top: 4px outset #A35709;
+            font-size: 20px;
+            padding-top: 40px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            .delete-popup-button-yes {
+                margin-top: 30px;
+                color: white;
+                font-size: 10px;
+                height: 30px;
+                margin-right: 6px;
+            }
+            .delete-popup-button-no {
+                margin-top: 30px;
+                color: white;
+                font-size: 10px;
+                height: 30px;
+            }
+        }
+        
+        .share-popup {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 90%;
+            height: 80px;
+            margin-left: 5%;
+            background-color: #1B1A17;
+            position: absolute;
+            bottom: 0;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            button {
+                height: 50px;
+                width: 50px;
+                background-color: #23221F;
+                border-style: none;
+                border-radius: 50%;
+            }
+            .to-copy-button {
+                background-image: url("../assets/images/toCopy.png");
+            }
+            .vk-button {
+                background-image: url("../assets/images/vk.png");
+            }
+            .telegram-button {
+                background-image: url("../assets/images/telegram.png");
+            }
+            .watsapp-button {
+                background-image: url("../assets/images/whatsapp.png");
+            }
+            .facebook-button {
+                background-image: url("../assets/images/facebook.png");
+            }
+        }
+    
+        .edit-popup {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1B1A17;
+            position: absolute;
+            bottom: 0;
+            width: 90%;
+            height: 70%;
+            margin-left: 5%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            button {
+                font-size: 16px;
+                color: #F0E3CA;
+                font-weight: 400;
+            }
+            .title-edit {
+                background-color: #242320;
+                width: 90%;
+                height: 5%;
+                margin-top: 26px;
+                margin-bottom: 10px;
+                font-size: 16px;
+                color: #F0E3CA;
+            }
+            .about-edit {
+                background-color: #242320;
+                width: 90%;
+                height: 90%;
+                border-radius: 4px;
+                border-color:#FF8303;
+                border-width: 2px;
+                color: #F0E3CA;
+                padding-left: 14px;
+                padding-top: 10px;
+                font-family: Roboto;
+                font-size: 15px;
+                font-weight: 300;
+                resize: none;
+            }
+            .popup-edit-buttons {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-bottom: 20px;
+                margin-top: 14px;
+                height: 40px;
+            }
+        }
+    }
+}

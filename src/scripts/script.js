@@ -205,10 +205,6 @@ document.body.addEventListener('click', function(event) {
         })
     }
 
-    if (event.target.classList == "info-button") {
-        console.log("info");
-    }
-
     if (event.target.classList == "edit-button") {
         const backgroundDiv = document.createElement('div');
         backgroundDiv.classList.add('popup-background');
